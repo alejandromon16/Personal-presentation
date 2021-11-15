@@ -1,0 +1,601 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Alejandro Montero</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js" integrity="sha512-XHnWZWvy5TkCnPgLU7XsWhGAks1JQ3uFutVxRSH0Z4+djsGkCkxVsYu+JgfrDicvbCmjfUf1HeMWYUvUYKgjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="{% static 'javascript/scrollreveal.js' %}"></script>
+  <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+</head>
+<
+<section class="hidden lg:grid justify-center h-full my-72">
+    <img src="https://media0.giphy.com/media/1dc4FlEHlfOLch9u1W/source.gif" class="h-60 w-60 ml-10" alt="blabla_is_working">
+    <h>USE YOUR PHONE TO LOOK AT THIS WEBSITE</h>
+</section>
+<section class="lg:hidden flex flex-col h-screen">
+      <nav class="bg-white ">
+			<div class="flex shadow-xl pt-4">
+					    <div class="flex h-full w-4/5 pt-2 ml-3">
+                 <div>
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mt-2 ml-3" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                 <div class="ml-3 pb-5">
+                    <p class="pl-4 pt-3 font-extrabold text-6xl ">Alejandro Montero</p>
+                    <p2 class="pl-1 font-thin pl-5 text-4xl"> Software Engineer Student</p2>
+                 </div> 
+      </div>
+        
+					<div class="flex ml-10 ">
+						<button class="mobile-menu-button outline-none" style="outline:none;">
+						<svg class=" w-20 h-20"
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+	
+			<div class="hidden mobile-menu">
+				<ul class="ml-14 mt-4 text-4xl">
+					<li class="active"><a href="#top" class="block px-2 py-4 hover:bg-blue-200 font-semibold scroll">About Me</a></li>
+          <li><a href="#projects" class="block  px-2 py-4 hover:bg-blue-200 transition duration-300 scroll">My Projects</a></li>
+					<li><a href="#Skills" class="block  px-2 py-4 hover:bg-blue-200 transition duration-300 scroll">Skills</a></li>
+					<li><a href="#learn" class="block px-2 py-4 hover:bg-blue-200 transition duration-300 scroll">How i learn</a></li>
+					<li><a href="#goals" class="block  px-2 py-4 hover:bg-blue-200 transition duration-300 scroll">My Goals</a></li>
+				</ul>
+			</div>
+			<script>
+              
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+              menu.classList.toggle("hidden");
+          });
+
+			</script>
+	</nav>
+
+
+    <main class="flex-1 overflow-y-auto">
+    <section id=top>
+    <div class="max-w-full mt-20 flex justify-center animate__animated animate__fadeIn">
+      <img src="https://scontent.fsrz1-2.fna.fbcdn.net/v/t39.30808-6/256002067_614131906691863_7035023632492585177_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=KemLfpfsKEAAX9rdyaN&_nc_ht=scontent.fsrz1-2.fna&oh=12ba3861bf101295016834c75a8de608&oe=61964493"  class="block rounded-full  h-2/3 w-2/3">
+    </div>
+    <div class="m-20 px-10 animate__animated animate__fadeInUp" style="font-size:40px;">
+      <p>Energetic and Passionate college student at <a href="https://www.upsa.edu.bo/es/" class="font-bold"><u>Univerisdad Privada de Santa Cruz de la Sierra</u></a> from Bolivia. Aiming to use my habilites of programming, investigation, and hability of rapid learning to work in some area of ​​development at your company.</p>
+    </div>
+  </section>
+  <div class="skills-r">
+    <div class="m-20 pl-10 mt-10" id="Skills">
+     <h class="font-bold text-6xl">Skills</h>
+      <div class="ml-5 mt-3">
+       <div> 
+         <div class="flex space-x-1 mt-10">
+           <p class="text-4xl pb-1 pt-2">Python</p>
+           <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+      <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+    <!--content-->
+    <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+      <!--header-->
+      <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+        <h3 class="text-6xl font-semibold">
+          Python
+        </h3>
+        <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
+          <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+            ×
+          </span>
+        </button>
+      </div>
+      <!--body-->
+      <div class="relative p-6 flex-auto ml-14 mt-10">
+        <p class=" text-blueGray-500 text-4xl leading-relaxed">
+            Object oriented programming.
+        </p>
+        <p class=" text-blueGray-500 text-4xl leading-relaxed">
+            Dictionaries and sets, lists and Tuples.
+        </p>
+        <p class=" text-blueGray-500 text-4xl leading-relaxed">
+            Handling strings and files.
+        </p>
+        <p class=" text-blueGray-500 text-4xl leading-relaxed">
+            Basics of django framework.
+        </p>
+        <p class="text-blueGray-500 text-4xl leading-relaxed">
+            
+familiarity with numpy, pandas, opencv, beatifulsoup and scrapy framework.
+        </p>
+      </div>
+      <!--footer-->
+      <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+        <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+         </div>
+         <div class="pt-1 pr-28 pb-2">
+        <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+          <div style="width:65%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+        </div>
+      </div>
+      </div>
+      
+      <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">C++</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-2')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-2">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Python
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-2')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Object oriented programming.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Vectors, funtions, clases.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Pointers and references.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Exception Handling.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-2')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-2-backdrop"></div>
+        </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:50%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+     </div>
+
+
+
+
+
+
+
+
+      <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">Databases</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-3')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-3">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Databases
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-3')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           I can manage create table, update and remove tables from Mysql and Postgresql.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+            Manipulating data of the table.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Can modify database or table schema.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-3')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-3-backdrop"></div>
+        </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:20%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+       </div>
+
+       <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">Frontend</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-4')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-4">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Frontend
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-4')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           html, css and a little bit of vanilla javascript for animation or funtionality.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           I use libraries as tailwind Css and bootstrap for css.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           currently learning react.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-4')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-4-backdrop"></div>
+        </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:73%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+       </div>
+
+       <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">Banckend</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-5')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-5">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Banckend
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-5')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Basics of Django framework and restfulframework.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Understand connection between UI and database.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           I deploy my application with Heroku, pythoneverywhere and aws-EC2.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Intermediate in manipulation at files, virtual enviroments and commands in Ubuntu/Debian Terminal.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-5')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-5-backdrop"></div>
+        </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:20%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+       </div>
+       <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">Communication</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-6')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-6">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Communication
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-6')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Intermediate English (B2)
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+        Spanish (native)
+    </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           work always in group in college and feel comfortable helping and letting others help me.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           work with active listening and like to take feedback from others.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-6')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-6-backdrop"></div>
+
+     </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+       </div>
+       <div> 
+        <div class="flex space-x-1 mt-10">
+          <p class="text-4xl pb-1 pt-2">Attetion to Details</p>
+          <button class="active:bg-pink-600 outline-none focus:outline-none mr-1 mb-10 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-7')">
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+</button>
+<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id-7">
+     <div class="relative mx-20 w-full  bg-white rounded-lg shadow-lg">
+   <!--content-->
+   <div class="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none">
+     <!--header-->
+     <div class="flex items-start justify-between  ml-14 mt-20 p-5 border-b border-solid border-blueGray-200 rounded-t">
+       <h3 class="text-6xl font-semibold">
+         Attetion to Details
+       </h3>
+       <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id-7')">
+         <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+           ×
+         </span>
+       </button>
+     </div>
+     <!--body-->
+     <div class="relative p-6 flex-auto ml-14 mt-10">
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           love coding so need to keep my eye always in what i am doing.
+       </p>
+       <p class=" text-blueGray-500 text-4xl leading-relaxed">
+           Debugging is stressful for most people, but personally I enjoy it because I can understand what I was doing wrong not to do it again.
+       </p>
+     </div>
+     <!--footer-->
+     <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b pt-10 pr-10 pb-14">
+       <button class="text-black bg-indigo-400 font-bold uppercase px-6 py-2 h-20 w-40 text-3xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id-7')">
+         Close
+       </button>
+     </div>
+   </div>
+ </div>
+</div>
+<div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-7-backdrop"></div>
+
+        </div>
+        <div class="pt-1 pr-28 pb-2">
+       <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-indigo-200 w-4/4">
+         <div style="width:82%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"></div>
+       </div>
+     </div>
+       </div>
+   </div>
+   </div>
+
+   <div class="m-20 pl-9 mt-20 pt-5" id="projects">
+    <h class="font-bold text-6xl">My Projects</h>
+     </div>
+   <section class="">
+    <div class="container my-8 mx-auto px-8 ">
+      <div class="flex flex-wrap -mx-1">
+
+  
+       <div class="scroll-projects my-1 px-1 w-full pb-28">
+
+           <!-- Article -->
+
+           <a href="https://github.com/alejandromon16/IHands">
+           <article class="transform overflow-hidden rounded-lg border border-gray-200 shadow-2xl transition durantion-200 scale-110 hove:scale-115">
+
+              
+                   <img alt="Placeholder" class="block h-auto w-full" src="https://www.rinconutil.com/wp-content/uploads/2017/12/Mano-Robotica.jpg">
+
+               <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                   <h1 class="text-4xl ">
+                       
+                           Ihand
+                       
+                   </h1>
+               </header>
+
+           </article>
+           </a> 
+           <!-- END Article -->
+
+       </div>
+
+       <div class="my-1 px-1 w-full pb-28">
+
+        <!-- Article -->
+        <a href="https://github.com/alejandromon16/trading-bot">
+        <article class="transform overflow-hidden rounded-lg border border-gray-200 shadow-2xl transition durantion-200 scale-110 hove:scale-115">
+
+           
+                <img alt="Placeholder" class="block h-96 w-full" src="https://libertex.com/sites/default/files/blog/702009205-min_0.jpg">
+            
+
+            <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                <h1 class="text-4xl ">
+                    
+                        Trading Bot
+                    
+                </h1>
+            </header>
+
+        </article>
+        </a>
+        <!-- END Article -->
+
+    </div>
+       <!-- END Column -->
+
+       <div class="my-1 px-1 w-full pb-28">
+         
+        <a href="https://github.com/alejandromon16/watering-plants">
+          <!-- Article -->
+          <article class="transform overflow-hidden rounded-lg border border-gray-200 shadow-2xl transition durantion-200 scale-110 hove:scale-115">
+
+              <a href="#">
+                  <img alt="Placeholder" class="block h-96 w-full" src="https://howtoculinaryherbgarden.com/wp-content/uploads/2021/03/sprinkler-in-action-watering-garden-1024x683.jpg">
+              </a>
+
+              <header class="flex items-center justify-center leading-tight p-2 md:p-4">
+                  <h1 class="text-4xl ">
+                      <a class="no-underline hover:underline text-black" href="#">
+                          Watering of plants
+                      </a>
+                  </h1>
+              </header>
+
+          </article>
+          <!-- END Article -->
+        </a>
+
+    </div>
+        
+   </div>
+</div>
+ </section>
+     
+    <div class="m-20 pl-10 mt-20" id="learn">
+     <h class="font-bold text-6xl">How I learn</h>
+      <div class=" mx-1 mt-3 mr-8" style="font-size:40px;">
+      <p>Reverse Engineer & Building Ugly Prototypes First.
+      I can learn just about anything by having a final product to tear apart piece by piece. I break the code where i need to figure out why things work the way they do and also use documentation when is avaibable.</p>
+    </div>
+      
+     </div>
+     
+     <div class="m-20 pl-10 mt-10">
+     <h class="font-bold text-6xl" id="goals">My Goals</h>
+      <div class=" mx-1 mt-3 mr-8" style="font-size:40px;">
+      <p>My primary goal of the internship is to gain as much experience as possible. My expectations involve being able to learn how to identify business problems and in that way expand my vision.</p>
+    </div>
+      
+     </div>
+     
+     <div class="bg-white h-40"></div>
+  </div>
+   
+     <footer class="fixed w-full bottom-0 left-0 bg-indigo-300  h-32 mt-10">
+       <div class="flex ml-96 pt-8 space-x-5">
+           <a href="https://github.com/alejandromon16">
+         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+         </svg>
+           </a>
+           <a href="https://www.instagram.com/alejandro.montero1/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+           </a>
+           <a href="https://wa.link/ih69en">
+           <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-5.971 18l.844-3.081c-.52-.902-.794-1.925-.794-2.973.001-3.279 2.668-5.946 5.946-5.946 1.591.001 3.084.62 4.206 1.744 1.123 1.124 1.741 2.618 1.74 4.207-.001 3.279-2.669 5.946-5.946 5.946-.995 0-1.976-.25-2.844-.724l-3.152.827zm3.298-1.903c.838.497 1.638.796 2.696.796 2.724 0 4.943-2.217 4.944-4.942.001-2.731-2.208-4.945-4.94-4.946-2.726 0-4.943 2.217-4.944 4.942 0 1.112.326 1.946.873 2.817l-.499 1.824 1.87-.491zm5.694-2.732c-.037-.062-.136-.099-.285-.174-.149-.074-.879-.434-1.015-.483-.136-.05-.235-.074-.334.074-.099.149-.384.483-.47.583-.087.099-.173.112-.322.037-.149-.074-.627-.231-1.195-.737-.442-.394-.74-.881-.827-1.029-.087-.149-.009-.229.065-.303l.223-.26.149-.248c.05-.099.025-.186-.012-.26l-.458-1.103c-.121-.29-.243-.25-.334-.255l-.286-.007c-.099 0-.26.037-.396.186s-.52.508-.52 1.24c0 .731.532 1.438.607 1.537.074.099 1.048 1.6 2.538 2.243.354.153.631.245.847.313.356.113.68.097.936.059.285-.043.879-.359 1.003-.706.123-.348.123-.645.086-.707z"/></svg>
+           </a>
+     </footer>
+  </main>
+  </section>
+
